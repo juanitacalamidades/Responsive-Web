@@ -1,0 +1,208 @@
+html {
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    font-family: 'Merriweather', serif;
+}
+
+p,
+a,
+caption,
+th,
+td {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+h2,
+h4 {
+    font-size: 18px;
+}
+
+body {
+    margin: 3% 5% 3% 5%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 1px;
+    background-color: white;
+    z-index: 1;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(90deg, #FFFFFF, #5FEEEE);
+}
+
+#header-img {
+    width: 20%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    align-self: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    align-self: flex-start;
+}
+
+ul li {
+    padding: 6px;
+    align-self: center;
+}
+
+h1 {
+    padding: 6px;
+    align-self: center;
+    font-size: 22px;
+}
+
+main {
+    display: block;
+    position: relative;
+    top: 50px;
+    padding: 30px;
+}
+
+#section-school,
+#section-teachers,
+#section-prices,
+#section-ask {
+    padding-top: 110px;
+}
+
+#section-teachers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    padding-top: 120px;
+}
+
+#teachers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.teacher-card {
+    width: 280px;
+    height: 300px;
+    padding: 20px;
+    margin: 8px 6px 8px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-pic {
+    width: 45%;
+    height: auto;
+    border-radius: 60%;
+    box-shadow: 4px 10px 15px #5feeee;
+    border: 0.5px #E8FFFF solid;
+}
+
+#section-prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table thead tr th {
+    padding: 20px;
+}
+
+table tbody tr td {
+    padding: 20px;
+}
+
+table {
+    background: linear-gradient(-45deg, white, antiquewhite);
+}
+
+#section-ask {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+form label,
+input {
+    margin-bottom: 10px;
+}
+
+form h2 {
+    margin-bottom: 50px;
+}
+
+#bottom {
+    background-color: antiquewhite;
+}
+
+
+/*RESPONSIVE IMAGES AND VIDEOS*/
+
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 320px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 14px;
+    }
+    h2,
+    h3,
+    h4,
+    li {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+    }
+}

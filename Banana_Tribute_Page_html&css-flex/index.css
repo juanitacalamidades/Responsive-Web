@@ -1,0 +1,113 @@
+html {
+    background-color: rgb(243, 240, 215);
+}
+
+h1,
+h4,
+h6 {
+    font-family: 'Merriweather', serif;
+}
+
+p,
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* For responsive image */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 5% auto 5%;
+    padding: 20px;
+}
+
+#title,
+#subtitle {
+    align-self: center;
+    text-align: center;
+}
+
+#subtitle {
+    margin-top: 1px;
+    max-width: 500px;
+    font-style: italic;
+}
+
+#img-div {
+    padding: 5%;
+}
+
+#img-div img {
+    align-self: center;
+    display: block;
+}
+
+#img-caption {
+    margin-top: 10px;
+}
+
+#tribute-info,
+.more-info {
+    font-size: 20px;
+    text-align: justify;
+}
+
+p::first-letter {
+    font-size: 200%;
+}
+
+@media (max-width: 300px) {
+    #tribute-info,
+    #title,
+    #subtitle,
+    .more-info {
+        margin: auto;
+        font-size: 15px;
+    }
+}
+
+#tribute-link {
+    text-decoration: none;
+    margin-bottom: 20%;
+    border: tomato solid;
+    padding: 20px;
+    color: black;
+}
+
+#tribute-link:hover,
+#tribute-link:active {
+    background-color: blueviolet;
+    color: yellow;
+    font-size: 200%;
+}
+
+
+/*#main {
+    display: grid;
+    grid-template-areas: "header header header" "image image image" "content content content" "link link link";
+}
+
+#title {
+    grid-area: header;
+}
+
+#img-div {
+    grid-area: image;
+}
+
+#tribute-info {
+    grid-area: content;
+}
+
+a {
+    grid-area: link;
+}*/

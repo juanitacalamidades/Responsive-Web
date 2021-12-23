@@ -1,0 +1,140 @@
+header,
+a,
+h2,
+p {
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #F5F6F7;
+}
+
+.lists {
+    list-style-type: disc;
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+h2 {
+    font-size: 16px;
+    color: #88C6BE;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+li,
+a:hover {
+    color: #DCDCDC;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    background-color: #3B3B4F;
+}
+
+header {
+    color: #88C6BE;
+    font-size: 18px;
+}
+
+#navbar {
+    background-color: #1B1B32;
+    color: #F5F6F7;
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid #D0D0D5;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar header {
+    padding: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px dotted #D0D0D5;
+}
+
+.nav-link {
+    margin-left: 0px;
+    padding: 8px;
+    width: 120px;
+    height: 20px;
+    display: flex;
+    align-content: center;
+}
+
+#main-doc {
+    background-color: #3B3B4F;
+    width: 76%;
+    height: 100%;
+    position: relative;
+    left: 20.1%;
+    padding: 3% 20px 5% 2%;
+}
+
+code {
+    /*background-color: #F5F6F7;*/
+    /* border: 1px solid #F5F6F7;*/
+    padding: 2%;
+    margin: 20px;
+    color: #BE8DBE;
+    word-break: break-all;
+}
+
+.code-piece {
+    margin: auto auto 5% 10%;
+}
+
+.comment {
+    color: greenyellow;
+}
+
+.main-section {
+    padding: 2%;
+    margin: 20px;
+}
+
+.main-section p {
+    text-align: justify;
+}
+
+
+/* RESPONSIVE*/
+
+@media (max-width: 810px) {
+    #navbar {
+        width: 180px;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    .main-doc {
+        display: flex;
+        width: 700px;
+        height: auto;
+        /* position: fixed; 
+        left: 180px;*/
+    }
+    .main-section {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+    #navbar {}
+    .main-section {
+        font-size: 10px;
+    }
+}

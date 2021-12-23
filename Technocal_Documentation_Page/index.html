@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&display=swap" rel="stylesheet">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <!-- On the left side of the screen and always visible-->
+        <header>React Docs.</header>
+        <ul class="navlist">
+            <li>
+                <a href="#getting_started" class="nav-link">Getting started</a>
+            </li>
+            <li>
+                <a href="#main_concepts" class="nav-link">Main concepts</a>
+            </li>
+            <li>
+                <a href="#api_reference" class="nav-link">API reference</a>
+            </li>
+            <li>
+                <a href="#hooks" class="nav-link">Hooks</a>
+            </li>
+            <li>
+                <a href="#testing" class="nav-link">Testing</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="getting_started">
+            <header>Getting started</header>
+            <p>React is a JavaScript library for building user interfaces. React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity
+                to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started. You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained
+                to a few dynamic widgets. When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up! As your application grows, you might want to consider a more integrated setup.
+                There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. </p>
+            <h2>Learn React</h2>
+            <p>People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful. Like any unfamiliar technology, React does have a
+                learning curve. With practice and some patience, you will get the hang of it. If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces
+                the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try! This documentation always reflects the latest stable version of React. Since React 16, you can find older versions
+                of the documentation on a separate page. Note that documentation for past versions is snapshotted at the time of the release, and isn’t being continuously updated.</p>
+            <h2>Create React App</h2>
+            <p>Create React App is a comfortable environment for learning React, and is the best way to start building a new single-page application in React. It sets up your development environment so that you can use the latest JavaScript features, provides
+                a nice developer experience, and optimizes your app for production. You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine. To create a project, run:
+            </p><br/>
+            <div class="code-piece"><code><br><span> npx create-react-app my-app </span><br><span>cd my-app</span><br><span> npm start</span></code>
+            </div>
+        </section>
+        <section class="main-section" id="main_concepts">
+            <header>Main concepts</header>
+            <p>The smallest React example looks like this:</p><br/>
+            <div class="code-piece">
+                <code><br><span>ReactDOM.render(</span>
+                <br><span><</span><span>h</span>1>Hello, world!<span><</span><span>/h</span>1>,<br>
+                <span>  document.getElementById('root')</span><br>
+                <span>);</span></code>
+            </div>
+            <p>It displays a heading saying “Hello, world!” on the page.</p>
+            <p>React is a JavaScript library, and so we’ll assume you have a basic understanding of the JavaScript language. If you don’t feel very confident, we recommend going through a JavaScript tutorial to check your knowledge level and enable you to
+                follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won’t have to feel like you’re learning both React and JavaScript at the same time. </p>
+            <h2>Introducing JSX syntax</h2>
+            <div class="code-piece">
+                <code><br><span>const element = </span><span><</span>h1>Hello, world!<span><</span>/h1>;</code>
+            </div>
+            <p>This funny tag syntax is neither a string nor HTML. It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it
+                comes with the full power of JavaScript. JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started. React embraces the fact that rendering
+                logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display. Instead of artificially separating technologies by putting markup and logic in separate
+                files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you
+                otherwise. React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages. With that out of the way,
+                let’s get started!</p>
+            <h2>Rendering element into the DOM</h2>
+            <p>Let’s say there is a somewhere in your HTML file:</p>
+            <div class="code-piece">
+                <code><br><span><</span>div id="root"><<span>/div></span></code>
+            </div>
+        </section>
+        <section class="main-section" id="api_reference">
+            <header> API reference</header>
+            <p>React is the entry point to the React library. If you load React from a <span> <</span>script> tag, these top-level APIs are available on the React global. If you use ES6 with npm, you can write import React from 'react'. If you use ES5 with
+                npm, you can write var React = require('react').</p>
+            <p>React components let you split the UI into independent, reusable pieces, and think about each piece in isolation. React components can be defined by subclassing React.Component or React.PureComponent. <br>
+                <ul>
+                    <li class="lists"><a href="https://reactjs.org/docs/react-api.html#reactcomponent">React.Component</a></li>
+                    <li class="lists"><a href="https://reactjs.org/docs/react-api.html#reactpurecomponent">React.PureComponent</a></li>
+                </ul><br>
+            </p>
+            <p>If you don’t use ES6 classes, you may use the create-react-class module instead. See Using React without ES6 for more information. We recommend using JSX to describe what your UI should look like. Each JSX element is just syntactic sugar for
+                calling React.createElement(). You will not typically invoke the following methods directly if you are using JSX. </p>
+        </section>
+        <section class="main-section" id="hooks">
+            <header>Hooks</header>
+            <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
+            <div class="code-piece">
+                <code><br><span>import React, { useState } from 'react'; <br>
+
+                 <span>function Example() { </span><br>
+                    <span class="comment">// Declare a new state variable, which we'll call "count"  const [count, setCount] = useState(0); </span> <br>
+                      <span>return (</span><br>
+                        <span><</span>div><br>
+                          <span><</span>p>You clicked {count} times<span><</span>/p><br>
+                          <span><</span>button onClick={() => setCount(count + 1)}> <br>
+                            Click me
+                          <span><</span>/button>
+                        <span><</span>/div>
+                      );
+                    }</span></code>
+
+
+            </div>
+            <p>This new function useState is the first “Hook” we’ll learn about, but this example is just a teaser. Don’t worry if it doesn’t make sense yet! You can start learning Hooks on the next page. On this page, we’ll continue by explaining why we’re
+                adding Hooks to React and how they can help you write great applications.</p>
+            <p>At React Conf 2018, Sophie Alpert and Dan Abramov introduced Hooks, followed by Ryan Florence demonstrating how to refactor an application to use them. </p>
+            <p>There are no plans to remove classes from React. You can read more about the gradual adoption strategy for Hooks in the bottom section of this page. Hooks don’t replace your knowledge of React concepts. Instead, Hooks provide a more direct
+                API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them. If you just want to start learning Hooks, feel free to jump directly to
+                the next page! You can also keep reading this page to learn more about why we’re adding Hooks, and how we’re going to start using them without rewriting our applications.</p>
+        </section>
+        <section class="main-section" id="testing">
+            <header>Testing</header>
+            <p>You can test React components similar to testing other JavaScript code.</p>
+            <p>There are a few ways to test React components. Broadly, they divide into two categories:
+                <ul>
+                    <li class="lists">Rendering component trees in a simplified test environment and asserting on their output.</li>
+                    <li class="lists">Running a complete app in a realistic browser environment (also known as “end-to-end” tests).</li>
+                    <li class="lists">Running a complete app in a realistic browser environment (also known as “end-to-end” tests).</li>
+                </ul>
+            </p>
+            <p>This documentation section focuses on testing strategies for the first case. While full end-to-end tests can be very useful to prevent regressions to important workflows, such tests are not concerned with React components in particular, and
+                are out of the scope of this section.</p>
+        </section>
+        <!-- 5 code elements withing all the section elements-->
+        <!-- 5 li elements withing all the section elements-->
+    </main>
+
+</body>
+
+</html>
