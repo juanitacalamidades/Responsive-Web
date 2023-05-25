@@ -1,0 +1,21 @@
+{
+    "name": "juanita_calamidades_portfolio",
+    "version": "2.0.0",
+    "description": "Personal portfolio",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "personal",
+        "portfolio",
+        "frontend",
+        "development",
+        "design"
+    ],
+    "author": "Yoanna Rodionova",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.62.1"
+    }
+}

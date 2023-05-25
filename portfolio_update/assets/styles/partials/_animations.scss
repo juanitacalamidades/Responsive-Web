@@ -1,0 +1,14 @@
+@keyframes animate {
+    10% {
+        background-position: -10px;
+    }
+    20% {
+        background-position: top left;
+    }
+    90% {
+        background-position: top right;
+    }
+    100% {
+        background-position: 10px;
+    }
+}
